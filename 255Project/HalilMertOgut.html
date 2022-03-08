@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="jquery-3.1.1.js"></script>
+    <script src="./jquery.color.min.js"></script>
+    <script src="./intro.js"></script>
+    <script src="./jquery.confetti.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+}
+.container {
+    margin: 0px auto;
+    justify-content: center;
+    text-align: center;
+}
+tr ,td{
+    border: 1px solid black;
+}
+td {
+    height: 100px;
+    width: 100px;
+}
+.info {
+    margin: 0px auto;
+
+    
+}
+.random{
+    background-color: black;
+}
+table{
+    margin: 0 auto;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+.info {
+    text-align: center;
+    width: 30%;
+}
+.info ul {
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+.info ul li {
+   
+    font-family: 'Anton', sans-serif;
+}
+li {
+    font-size: 40px;
+}
+
+.bar {
+    width: 300px;
+    height: 12px;
+    background-color: blue;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.subBar{
+    width: 300px;
+    height: 10px;
+    background-color: cyan;
+    border: 1px solid blue;
+    
+    
+}
+
+#counter{
+    font-size: 40px;
+    color: red;
+    margin-right: 20px;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+.intro{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    text-align: center;
+}
+.intro p {
+    margin:0 auto;
+    margin-top: 300px;
+    text-align: center;
+    color: pink;
+    font-size: 70px;
+}
+.g {
+    opacity: 0.8;
+    color: yellow;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-top: 150px;
+    margin-left: 10px;
+    font-size: 50px;
+}
+.x{
+    opacity: 0.8;
+    color: yellow;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-top: 150px;
+    margin-left: 10px;
+    font-size: 50px;
+
+}
+.score{
+    color: green;
+    font-size: 80px;
+    margin-left: 40px;
+}
+
+.hi{
+    margin-left: 60px;
+}
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <p class="timer">3</p>
+    </div>
+    <div class="container">
+        <div class="info">
+            <ul>
+                <li>HI-SCORE</li>
+                <li>SCORE</li>
+                <li>TIME</li>
+            </ul>
+        </div>
+        <div class="info">
+            <ul>
+                <li class="hi">0
+                </li>
+                <li class="score">0
+                </li>
+                <li><div id="counter">10</div></li>
+            </ul>
+        </div>
+        <div class="a"></div>
+        <div>
+            <div class="g">Tap the black tiles!</div>
+            
+            <table>
+                <tr>
+                    <td id="1"></td>
+                    <td id="2"></td>
+                    <td id="3"></td>
+                    <td id="4"></td>
+                </tr>
+                <tr>
+                    <td id="5"></td>
+                    <td id="6"></td>
+                    <td id="7"></td>
+                    <td id="8"></td>
+                </tr>
+                <tr>
+                    <td id="9"></td>
+                    <td id="10"></td>
+                    <td id="11"></td>
+                    <td id="12"></td>
+                </tr>
+                <tr>
+                    <td id="13"></td>
+                    <td id="14"></td>
+                    <td id="15"></td>
+                    <td id="16"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="last">
+            <div class="bar">
+                <div class="subBar"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
